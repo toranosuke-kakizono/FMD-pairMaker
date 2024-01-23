@@ -25,7 +25,7 @@ for (let i = 0; i < 20; i++) {
 addPairToDate(15);
 
 
-//引数の数だけpairMakerでペアを作り、day1~20まで追加！
+//引数の数だけpairAraayMakerでペアを作り、day1~20まで追加！
 /**
  * 
  * @param {Number} numberOfPairs ペアの人数
@@ -33,7 +33,7 @@ addPairToDate(15);
 function addPairToDate(numberOfPairs) {
     for (let i = 0; i < 20; i++) {
         const th_DAY = document.getElementById(`DAY${i + 1}`);
-        const nodeArr = pairMaker(numberOfPairs);
+        const nodeArr = pairAraayMaker(numberOfPairs);
         // console.log(nodeArr);
         for (const node of nodeArr) {
             th_DAY.appendChild(node);
@@ -46,7 +46,7 @@ function addPairToDate(numberOfPairs) {
  * @param {Number} numberOfPairs 
  * @returns {Array}
  */
-function pairMaker(numberOfPairs) {
+function pairAraayMaker(numberOfPairs) {
     //重複のないランダムな配列を作成
     const numbers = numbersMaker(numberOfPairs);
     const nodeArr = [];
