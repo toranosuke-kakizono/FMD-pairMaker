@@ -1,0 +1,8 @@
+#pair_table {
+	width: 400px;
+	height: 300px;
+}
+
+table,th,td {
+	border: 1px solid #bbb;
+}
